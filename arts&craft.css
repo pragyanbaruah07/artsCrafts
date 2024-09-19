@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lilita+One&family=Pacifico&family=Playwrite+CU:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rye&display=swap');
+
+
+/*Arts&Crafts Navbar Styling*/
+
+.artCraft-logo{
+    height: 77px;
+    width: 99px;
+    padding-left: 10px;
+}
+
+.navbar-links{
+    font-family: "Pacifico", system-ui;
+    font-size: 27px;
+}
+
+.banner-head{
+    font-family: "Pacifico", system-ui;
+    font-size: 33px;
+    color: goldenrod;
+}
+
+.banner-details{
+    font-family: "IBM Plex Mono", system-ui;
+    font-size: 17px;
+    color: black;
+}
+
+.banner-btn{
+    height: 33px;
+    width: 111px;
+    font-family: "Playwrite CU", cursive;
+    font-size: 17px;
+    border-width: 0px;
+    color: white;
+    background-color: goldenrod;
+}
+
+.banner-pic{
+    background-image: url("https://img.freepik.com/free-photo/artist-s-hand-close-up-wallof-picture_155003-10534.jpg?ga=GA1.1.511339307.1716481744&semt=ais_hybrid");
+    height: 333px;
+    background-size: cover;
+}
+
+
+.main-head{
+    font-family: "Pacifico", system-ui;
+    font-size: 33px;
+    color: goldenrod;
+    background-color: gainsboro;  
+    font-weight: 900;
+    text-align: center;
+    padding: 11px;
+}
+
+/*Arts&Crafts About Styling*/
+.about-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 444px;
+}
+
+.bg-overlay {
+    position: relative;
+    background-image: url('https://img.freepik.com/free-photo/top-view-colorful-painting-with-brushes_23-2148612723.jpg?ga=GA1.1.511339307.1716481744&semt=ais_hybrid');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .bg-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(218, 165, 32, 0.9); /* Yellow shade with 30% opacity */
+    z-index: 1;
+  }
+  
+  .bg-overlay > * {
+    position: relative;
+    z-index: 2; /* Ensures content is above the overlay */
+  }
+
+  .about-header{
+    font-family: "Pacifico", system-ui;
+    font-size: 22px;
+    color: white;
+    text-decoration: underline;
+  }
+
+  .about-details{
+    font-family: "IBM Plex Mono", system-ui;
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+    font-style: italic;
+  }
+  
+
+/*Arts&Crafts Gallery Styling*/
+
+.gallery-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 50vh;
+    overflow-y: auto;
+}
+
+/*Arts&Crafts Services Styling*/
+.services-container{
+    margin-top: -10px;
+    background-color: gainsboro;
+}
+
+.service-card{
+    padding: 11px;
+}
+
+.service-name{
+    font-family: "Pacifico", system-ui;
+    font-size: 33px;
+    color: goldenrod;
+}
+
+.service-details{
+    font-family: "IBM Plex Mono", system-ui;
+    font-size: 17px;
+    color: black;
+}
+
+
+/*Arts&Crafts Testimonials Styling*/
+.testimonials-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonials-card{
+    width: 333px;
+    text-align: center;
+}
+
+.testimonials-card-img{
+    height: 99px;
+    width: 111px;
+    border-radius: 50%;
+    margin: 11px;
+}
+
+.testimonials-card-name{
+    font-family: "Pacifico", system-ui;
+    font-size: 33px;
+    color: black;
+}
+
+.testimonials-card-details{
+    font-family: "IBM Plex Mono", system-ui;
+    font-size: 17px;
+    color: black;
+}
+
+.testimonials-card-person{
+    font-family: "Pacifico", system-ui;
+    font-size: 17px;
+    color: goldenrod;
+}
+
+/*Arts&Crafts Contact Styling*/
+.contact-container{
+    margin-top: -10px;
+    background-color: gainsboro;
+}
+
+.contact-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon{
+    font-size: 22px;
+    color: goldenrod;
+    margin: 11px;
+}
+
+.icon-text{
+    font-family: "IBM Plex Mono", system-ui;
+    font-size: 17px;
+    color: black;
+    padding-left: 11px;
+    margin-left: 11px;
+}
+
+.contact-copyright{
+    background-color: goldenrod;
+    padding: 11px;
+    color: white !important;
+}
+
+/*Animation Functionality*/
+.pop-in {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+  }
+  
+  .pop-in.visible {
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+  
